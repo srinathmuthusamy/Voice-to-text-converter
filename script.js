@@ -6,7 +6,8 @@ const greeting = ["I am fine thank you", "You are my king", "Hey My friend"];
 const date = `The  is ${new Date()} Hope i helped you`;
 const who = "Srinath created me"
 const how = "I was created with HTML CSS and JavaScript"
-const answer = "Elon Musk"
+const answer = "Elon Musk is the owner of tesla"
+const answer2  = "Srinath is the future elon musk"
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -42,6 +43,9 @@ function readOutLoud(message) {
   }
   if(message.includes("who is the owner of Tesla")){
     speech.text = answer;
+  }
+  if(message.includes("who is the future elon musk")){
+    speech.text = 
   }
   speech.volume = 1;
   speech.rate = 0.8;
