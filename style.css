@@ -74,3 +74,34 @@ body {
 #one {  
     height: 70px;
 }
+
+@media screen and (max-width: 768px){
+    body {
+        height: 100vh;
+    }
+    .talk {
+        margin-left: -650px;
+    }
+    .flex {
+        margin-left: 30px;
+    }
+    .result {
+        width: 20rem;
+        margin-left: -100px;
+        margin-top: -400px; 
+    }
+    .resultu {
+        margin-left: -500px;
+        margin-top: 100px;
+        margin-bottom: 33.5rem;
+    }
+    #one, #two {
+        height: 65px;
+    }
+    #two {
+        margin-left: 0px;
+    }
+    .ai {
+        margin-top: 0rem;
+    }
+}
