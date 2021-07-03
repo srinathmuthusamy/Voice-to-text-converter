@@ -47,6 +47,9 @@ function readOutLoud(message) {
   if(message.includes("who is the CEO of Google")){
     speech.text = answer2;
   }
+  if(message.includes("open youtube")){
+    window.open("https://youtube.com", "_blank")
+  }
   speech.volume = 1;
   speech.rate = 0.8;
   speech.pitch = 1;
