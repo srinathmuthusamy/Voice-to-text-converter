@@ -40,7 +40,7 @@ function readOutLoud(message) {
   if(message.includes("how you are built")){
     speech.text = how;
   }
-  if(message.includes("who is the owner of Testa")){
+  if(message.includes("who is the owner of Tesla")){
     speech.text = answer;
   }
   speech.volume = 1;
