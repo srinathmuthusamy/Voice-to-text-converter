@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: Montserrat;
+}
+
+
+
+.talk div img, .flex div img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.talk{
+    border-radius: 10%;
+    padding: 12px;
+    background: lightcoral;
+    border: lightcoral;
+    margin-top: 8rem;
+    margin-left: -48%;
+    font-size: 10px;
+}
+.flex {
+    display: flex;
+    margin-left: 35rem;
+    margin-top: -3rem;
+    position: relative;
+}
+.nann {
+    width: 50px;
+    height: 45px;
+    padding: 12px;
+    background: lightcoral;
+    margin: 20px;
+    border-radius: 10%;
+    margin-top: -1rem;
+    border: lightcoral;
+}
+.result {
+    padding: 10px;
+    background: lightblue;
+    width: 500px;
+    font-size: 20px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 300px;
+    margin-right: -50px;
+    margin-top: 350px;
+    margin-bottom: -80px;
+    padding-left: 20px;
+    font-family: Montserrat;
+    text-align: center;
+    overflow: scroll;
+}
+.ai {
+    margin-left: 100px;
+    margin-top: -15rem;
+    text-align: center;
+}
+.resultu {
+    margin-left: -15rem;
+    margin-top: 300px;
+    margin-bottom: -325px;
+    font-family: Montserrat;
+}
+#one img{
+    height: 20px;
+    width: 20px;
+}
+#two {
+    height: 70px;
+    padding: 10px;
+}
+#one {  
+    height: 70px;
+}
