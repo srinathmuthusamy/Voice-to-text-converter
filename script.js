@@ -4,6 +4,7 @@ const play = document.querySelector("#three");
 
 const greeting = ["I am fine thank you", "You are my king", "Hey My friend"];
 const date = `The  is ${new Date()} Hope i helped you`;
+const who = "Srinath created me"
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -31,9 +32,8 @@ function readOutLoud(message) {
   if(message.includes("today's date")){
     speech.text = date;
   }
-  if(message.includes("how are you")){
-    const result = greeting[Math.floor(Math.random() * greetings.length)]
-    speech.text = result;
+  if(message.includes("who created you")){
+    speech.text = who;
   }
   speech.volume = 1;
   speech.rate = 0.8;
