@@ -59,4 +59,4 @@ copyBtn.addEventListener("click", function copy() {
   window.getSelection().removeAllRanges();
   window.getSelection().addRange(range);
 });
-//Done by Srinath.M
+//Done by Srinath.Muthusamy
