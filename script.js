@@ -7,7 +7,7 @@ const date = `The  is ${new Date()} Hope i helped you`;
 const who = "Srinath created me"
 const how = "I was created with HTML CSS and JavaScript"
 const answer = "Elon Musk is the owner of tesla"
-const answer2  = "Sridurga is the future elon musk"
+const answer2  = "Srinath is the future elon musk"
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
