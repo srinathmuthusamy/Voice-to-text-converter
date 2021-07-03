@@ -36,7 +36,7 @@ function readOutLoud(message) {
   if(message.includes("who created you")){
     speech.text = who;
   }
-  if(message.includes("How you were build")){
+  if(message.includes("How you where build")){
     speech.text = how;
   }
   speech.volume = 1;
