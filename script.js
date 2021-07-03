@@ -31,10 +31,6 @@ function readOutLoud(message) {
   if(message.includes("What's today's date")){
     speech.text = date;
   }
-  if(message.includes("how are you")){
-    const result = greetings[Math.floor(Math.random() * greetings.length]
-    speech.text = result;
-  }
   speech.volume = 1;
   speech.rate = 0.8;
   speech.pitch = 1;
