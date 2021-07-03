@@ -28,7 +28,7 @@ btn.addEventListener("click", () => {
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
    speech.text = message;
-  if(message.includes("Today's")){
+  if(message.includes("today's date")){
     speech.text = date;
   }
   speech.volume = 1;
