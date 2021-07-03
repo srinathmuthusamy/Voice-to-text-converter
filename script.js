@@ -4,7 +4,6 @@ const play = document.querySelector("#three");
 
 const greeting = ["I am fine thank you", "You are my king", "Hey My friend"];
 const date = `The  is ${new Date()} Hope i helped you`;
-const time = `The time is ${}`
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -29,6 +28,13 @@ btn.addEventListener("click", () => {
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = message;
+  if(message.includes("What's today's date")){
+    speech.text = date;
+  }
+  if(message.includes("how are you")){
+    const result = greetings[Math.floor(Math.random() * greetings.length]
+    speech.text = result;
+  }
   speech.volume = 1;
   speech.rate = 0.8;
   speech.pitch = 1;
