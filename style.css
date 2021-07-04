@@ -14,8 +14,8 @@ body {
 .talk{
     border-radius: 10%;
     padding: 12px;
-    background: lightcoral;
-    border: lightcoral;
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+    border: linear-gradient(to top left, #39b385, #9be15d);
     margin-top: 8rem;
     margin-left: -48%;
     font-size: 10px;
@@ -30,11 +30,11 @@ body {
     width: 50px;
     height: 45px;
     padding: 12px;
-    background: lightcoral;
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
     margin: 20px;
     border-radius: 10%;
     margin-top: -1rem;
-    border: lightcoral;
+    border: linear-gradient(to top left, #39b385, #9be15d);
 }
 .result {
     padding: 10px;
