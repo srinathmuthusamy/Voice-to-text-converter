@@ -8,6 +8,7 @@ const who = "Srinath created me"
 const how = "I was created with HTML CSS and JavaScript"
 const answer = "Elon Musk is the owner of tesla"
 const answer2 = "Sundar Pichai is the CEO of google"
+const ytopen = "Opening youtube"
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -49,6 +50,7 @@ function readOutLoud(message) {
   }
   if(message.includes("open YouTube")){
     window.open("https://youtube.com", "_blank")
+    speech.text = ytopen
   }
   speech.volume = 1;
   speech.rate = 0.8;
