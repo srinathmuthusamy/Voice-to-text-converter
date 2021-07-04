@@ -50,7 +50,7 @@ function readOutLoud(message) {
   if(message.includes("open YouTube")){
     window.open("https://youtube.com", "_blank")
   }
-  if(message.includes("hetosa")){
+  if(message.includes("hi")){
     recognition.start();
   }
   speech.volume = 1;
