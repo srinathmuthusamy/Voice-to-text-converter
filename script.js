@@ -86,8 +86,7 @@ recognition.start();
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = message;
-  if(message.includes('start')){
-    if(message.includes("What's today's date")){
+  if(message.includes("What's today's date")){
     speech.text = date
   }
     if (message.includes("who created you")) {
@@ -154,7 +153,7 @@ function readOutLoud(message) {
     }
     if(message.includes('Hi' || 'Hello' || 'Hi Hetosa')){
       speech.text = 'Hello dude'
-    }}
+    }
   speech.volume = 1;
   speech.rate = 1;
   speech.pitch = 1;
