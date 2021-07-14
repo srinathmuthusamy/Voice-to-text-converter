@@ -81,8 +81,9 @@ recognition.onresult = function (event) {
   readOutLoud(transcript);
 };
 //add the Listener to the btn
-recognition.start();
-
+btn.addEventListener("click", () => {
+  recognition.start();
+});
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = message;
@@ -170,6 +171,4 @@ copyBtn.addEventListener("click", function copy() {
   window.getSelection().removeAllRanges();
   window.getSelection().addRange(range);
 });
-
-
 
