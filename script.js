@@ -59,7 +59,13 @@ const answer2 = "Sundar Pichai is the CEO of google"
 const ytopen = "Opening youtube"
 const ytopenwl = "Opening Your watch later video";
 const facebook = "Opening facebook"
+const openmy = "Opening your youtube channel"
 const openWhatsapp = "Opening whatsapp"
+const cjsc  = "Opening the complete Javascript course"
+const hry = ['I am fine thank you', 'I am fine how about you', 'Awesome dude!']
+const ift = ['So happy to hear that', 'Oh Awesome!', 'Great!']
+const darkMode = 'Applying dark mode'
+const lightmode  = 'Applying light mode'
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -75,14 +81,13 @@ recognition.onresult = function (event) {
   readOutLoud(transcript);
 };
 //add the Listener to the btn
+recognition.start();
 
-btn.addEventListener("click", () => {
-  recognition.start();
-});
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = message;
-  if(message.includes("What's today's date")){
+  if(message.includes('Hetosa')){
+    if(message.includes("What's today's date")){
     speech.text = date
   }
     if (message.includes("who created you")) {
@@ -114,15 +119,44 @@ function readOutLoud(message) {
       )
       speech.text = facebook;
     }
+    if(message.includes("open my YouTube channel")){
+      window.open("https://www.youtube.com/channel/UCRBrtTVdswb24WbhMPT7lZQ");
+      speech.text = openmy;
+    }
         if (message.includes("open WhatsApp")) {
           window.open("https://web.whatsapp.com");
           speech.text = openWhatsapp;
         }
-      if(message.includes('Hi' || 'Hello' || 'Hi Hetosa')){
-      speech.text = 'Hello dude'
+    if(message.includes("open the complete JavaScript course")){
+    window.open(
+    "https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648747#overview"
+    );
+    speech.text = cjsc;
     }
+    if(message.includes("how are you")){
+      speech.text = hry[Math.trunc(Math.random() * hry.length)] 
+    }
+    if(message.includes('I am fine')){
+      speech.text = ift[Math.trunc(Math.random() * ift.length)]
+    }
+    if (message.includes('search YouTube')){
+      window.open(
+        "https://www.youtube.com/results?search_query=${message.splice(16)}"
+      );
+    }
+    if(message.includes('apply dark mode')){
+      document.body.style.background = "black";
+      speech.text = darkMode;
+    }
+    if(message.includes('apply light mode')){
+      document.body.style.background = "white";
+      speech.text = lightmode;
+    }
+    if(message.includes('Hi' || 'Hello' || 'Hi Hetosa')){
+      speech.text = 'Hello dude'
+    }}
   speech.volume = 1;
-  speech.rate = 0.8;
+  speech.rate = 1;
   speech.pitch = 1;
   window.speechSynthesis.speak(speech);
 }
@@ -137,4 +171,6 @@ copyBtn.addEventListener("click", function copy() {
   window.getSelection().removeAllRanges();
   window.getSelection().addRange(range);
 });
+
+
 
