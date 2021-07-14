@@ -118,6 +118,9 @@ function readOutLoud(message) {
           window.open("https://web.whatsapp.com");
           speech.text = openWhatsapp;
         }
+      if(message.includes('Hi' || 'Hello' || 'Hi Hetosa')){
+      speech.text = 'Hello dude'
+    }
   speech.volume = 1;
   speech.rate = 0.8;
   speech.pitch = 1;
