@@ -152,7 +152,7 @@ function readOutLoud(message) {
       document.body.style.background = "white";
       speech.text = lightmode;
     }
-    if(message.includes('Hi' || 'Hello' || 'Hi Hetosa')){
+    if(message.includes('hi' || 'hello' || 'hi Hetosa')){
       speech.text = 'Hello dude'
     }
   speech.volume = 1;
