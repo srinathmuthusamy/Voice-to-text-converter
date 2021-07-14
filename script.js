@@ -83,7 +83,7 @@ recognition.onresult = function (event) {
 //add the Listener to the btn
 btn.addEventListener("click", () => {
   recognition.start();
-});
+}); 
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = message;
