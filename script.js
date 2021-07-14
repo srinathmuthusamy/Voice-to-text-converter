@@ -86,7 +86,7 @@ recognition.start();
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = message;
-  if(message.includes('Hetosa')){
+  if(message.includes('Start')){
     if(message.includes("What's today's date")){
     speech.text = date
   }
