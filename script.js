@@ -88,7 +88,7 @@ btn.addEventListener("click", () => {
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = message;
-  if(message.includes("What's today's date")){
+  if(message.includes("what's today's date" || "today's date")){
     speech.text = date
   }
     if (message.includes("who created you")) {
