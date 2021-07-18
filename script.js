@@ -157,6 +157,9 @@ function readOutLoud(message) {
     if(message.includes('hi' || 'hello' || 'hi Hetosa')){
       speech.text = 'Hello dude'
     }
+  if(message.includes('time')){
+    speech.text = time;
+   }
   speech.volume = 1;
   speech.rate = 1;
   speech.pitch = 1;
