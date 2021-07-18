@@ -51,7 +51,8 @@ const content = document.querySelector(".content");
 const play = document.querySelector("#three");
 
 const greeting = ["I am fine thank you", "You are my king", "Hey My friend"];
-const date = `The  is ${new Date()} Hope i helped you`;
+const now  = new Date();
+const date = now.getDate();
 const who = "Srinath created me"
 const how = "I was created with HTML CSS and JavaScript"
 const answer = "Elon Musk is the owner of tesla"
