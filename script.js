@@ -147,7 +147,7 @@ function readOutLoud(message) {
     }
     if (message.includes('search YouTube')){
       window.open(
-        "https://www.youtube.com/results?search_query=${message.splice(16)}"
+        "https://www.youtube.com/results?search_query=abraham benjami de villiers vs kieron pollard"
       );
     }
     if(message.includes('apply dark mode')){
