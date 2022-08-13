@@ -139,6 +139,9 @@ function readOutLoud(message) {
     );
     speech.text = cjsc;
     }
+  if (message.includes("all my friends are")){
+    window.open("https://www.youtube.com/watch?v=5Ns58cF9z68")
+  }
     if(message.includes("how are you")){
       speech.text = hry[Math.trunc(Math.random() * hry.length)] 
     }
