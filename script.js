@@ -68,7 +68,7 @@ const hry = ['I am fine thank you', 'I am fine how about you', 'Awesome dude!']
 const ift = ['So happy to hear that', 'Oh Awesome!', 'Great!']
 const darkMode = 'Applying dark mode'
 const lightmode  = 'Applying light mode'
-const bestfriend = 'Gautham, Pradhip, Bhojaraj, Dharshan, Vaseegaran, Anbu, Surjith, Amul, Muruhavel, Rishanth'
+const bestfriend = 'Gautham, Pradhip, Bhojaraj, Dharshan, Vaseegaran, Anbu, Surjith, Amirta Ganesh, Muruhavel, Rishanth'
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
