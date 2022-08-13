@@ -150,7 +150,7 @@ function readOutLoud(message) {
       speech.text = darkMode;
     }
   if(message.includes("what is your name")){
-       speech.text = 'My Name is DRACX"
+       speech.text = 'My Name is DRACX'
      }
     if(message.includes('apply light mode')){
       document.body.style.background = "white";
