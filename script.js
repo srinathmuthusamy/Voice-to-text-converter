@@ -96,7 +96,7 @@ function readOutLoud(message) {
     if (message.includes("who created you")) {
       speech.text = who;
     }
-  if (message.includes('who is your best friend')){
+  if (message.includes('who are best friend')){
     speech.text = bestfriend
   }
     if (message.includes("how you are built")) {
