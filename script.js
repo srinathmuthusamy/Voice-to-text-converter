@@ -68,6 +68,7 @@ const hry = ['I am fine thank you', 'I am fine how about you', 'Awesome dude!']
 const ift = ['So happy to hear that', 'Oh Awesome!', 'Great!']
 const darkMode = 'Applying dark mode'
 const lightmode  = 'Applying light mode'
+const bestfriend = 'Gautham, Pradhip, Bhojaraj, Dharshan, Vaseegaran, Anbu, Surjith, Amul, Muruhavel, Rishanth'
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -95,6 +96,9 @@ function readOutLoud(message) {
     if (message.includes("who created you")) {
       speech.text = who;
     }
+  if (message.includes('who is your best friend')){
+    speech.text = bestfriend
+  }
     if (message.includes("how you are built")) {
       speech.text = how;
     }
