@@ -145,11 +145,6 @@ function readOutLoud(message) {
     if(message.includes('I am fine')){
       speech.text = ift[Math.trunc(Math.random() * ift.length)]
     }
-    if (message.includes('search YouTube')){
-      window.open(
-        "https://www.youtube.com/results?search_query="+message
-      );
-    }
     if(message.includes('apply dark mode')){
       document.body.style.background = "black";
       speech.text = darkMode;
