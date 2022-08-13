@@ -119,7 +119,7 @@ function readOutLoud(message) {
       );
       speech.text = ytopenwl;
     }
-    if (message.includes("open Facebook")){
+    if (message.includes("open Facebook" || 'open meta')){
       window.open(
         "https://www.facebook.com", "_blank"
       )
