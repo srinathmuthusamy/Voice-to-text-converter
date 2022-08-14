@@ -165,6 +165,7 @@ function readOutLoud(message) {
     if(message.includes('hi' || 'hello' || 'hi Hetosa')){
       speech.text = 'Hello dude'
     }
+  message.lowerCase()
   if(message.includes('time')){
     speech.text = time;
    }
