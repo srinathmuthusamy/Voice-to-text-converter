@@ -154,7 +154,7 @@ function readOutLoud(message) {
       speech.text = darkMode;
     }
   if(message.includes("search youtube for")){
-     window.open(`https://www.youtube.com/results?search_query=${message}`)
+     window.open(`https://www.youtube.com/results?search_query=${message.splice(19)}`)
    }
   if(message.includes("what is your name")){
        speech.text = 'My Name is DRACX'
