@@ -153,7 +153,7 @@ function readOutLoud(message) {
       document.body.style.background = "black";
       speech.text = darkMode;
     }
-  if(message.includes("search YouTube for")){
+  if(message.includes("search youtube for")){
      window.open(`https://www.youtube.com/results?search_query=${message}`)
    }
   if(message.includes("what is your name")){
