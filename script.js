@@ -154,7 +154,7 @@ function readOutLoud(message) {
       speech.text = darkMode;
     }
   if(message.includes("search youtube for")){
-    let youtubeSearchTerm = message.slice(16);
+    let youtubeSearchTerm = message.slice(19);
      window.open(`https://www.youtube.com/results?search_query=${youtubeSearchTerm}`)
    }
   if(message.includes("what is your name")){
