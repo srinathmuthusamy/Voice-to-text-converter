@@ -99,6 +99,7 @@ function readOutLoud(message) {
   if (message.includes('who are your best friends')){
     speech.text = bestfriend
   }
+  message.toLowerCase()
     if (message.includes("how you are built")) {
       speech.text = how;
     }
@@ -153,7 +154,7 @@ function readOutLoud(message) {
       speech.text = darkMode;
     }
   if(message.includes("search YouTube for")){
-     window.open(`https://www.youtube.com/results?search_query=${message.splice(20)}`)
+     window.open(`https://www.youtube.com/results?search_query=${message)}`)
    }
   if(message.includes("what is your name")){
        speech.text = 'My Name is DRACX'
