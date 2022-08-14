@@ -156,6 +156,7 @@ function readOutLoud(message) {
   if(message.includes("search youtube for")){
     let youtubeSearchTerm = message.slice(16);
      window.open(`https://www.youtube.com/results?search_query=${youtubeSearchTerm}`)
+    console.log(youtubeSearchTerm)
    }
   if(message.includes("what is your name")){
        speech.text = 'My Name is DRACX'
