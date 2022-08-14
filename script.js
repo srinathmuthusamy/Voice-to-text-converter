@@ -152,7 +152,7 @@ function readOutLoud(message) {
       document.body.style.background = "black";
       speech.text = darkMode;
     }
-  if(message.includes("search youtube for")){
+  if(message.includes("search Youtube for")){
      window.open(`https://www.youtube.com/results?search_query=${message.splice(20)}`)
    }
   if(message.includes("what is your name")){
@@ -165,7 +165,6 @@ function readOutLoud(message) {
     if(message.includes('hi' || 'hello' || 'hi Hetosa')){
       speech.text = 'Hello dude'
     }
-  message = message.lowerCase()
   if(message.includes('time')){
     speech.text = time;
    }
