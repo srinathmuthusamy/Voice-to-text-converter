@@ -153,11 +153,6 @@ function readOutLoud(message) {
       document.body.style.background = "black";
       speech.text = darkMode;
     }
-  if(message.includes("search Google for")){
-    let googleSearchTerm = message.slice(18)
-    window.open(`https://www.google.com/search?q=${googleSearchTerm}`)
-    
-  }
   if(message.includes("search youtube for")){
     let youtubeSearchTerm = message.slice(19);
      window.open(`https://www.youtube.com/results?search_query=${youtubeSearchTerm}`)
