@@ -154,7 +154,7 @@ function readOutLoud(message) {
       speech.text = darkMode;
     }
   if(message.includes("search Google for")){
-    let googleSearchTerm = message.splice(18)
+    let googleSearchTerm = message.slice(18)
     window.open(`https://www.google.com/search?q=${googleSearchTerm}`)
     
   }
