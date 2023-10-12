@@ -99,7 +99,6 @@ function readOutLoud(message) {
   if (message.includes('who are your best friends')){
     speech.text = bestfriend
   }
-  message =  message.toLowerCase()
     if (message.includes("how you are built")) {
       speech.text = how;
     }
