@@ -54,7 +54,7 @@ const greeting = ["I am fine thank you", "You are my king", "Hey My friend"];
 const now  = new Date();
 const date = `${now.getDate()}/${now.getMonth() +1}/${now.getFullYear()}`;
 const time = `The time is ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
-const who = "Srinath created me"
+const who = "Srinath and deva dharshan created me"
 const how = "I was created with HTML CSS and JavaScript"
 const answer = "Elon Musk is the owner of tesla"
 const answer2 = "Sundar Pichai is the CEO of google"
@@ -68,7 +68,7 @@ const hry = ['I am fine thank you', 'I am fine how about you', 'Awesome dude!']
 const ift = ['So happy to hear that', 'Oh Awesome!', 'Great!']
 const darkMode = 'Applying dark mode'
 const lightmode  = 'Applying light mode'
-const bestfriend = 'Gautham, Pradhip, Bhojaraj, Dharshan, Vaseegaran, Anbu, Surjith, Amirta Ganesh, Muruhavel, Rishanth'
+const bestfriend = 'Gautham, Pradhip, Bhojaraj, Dharshan, Anbu, Surjith, Amirta Ganesh, Muruhavel'
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
